@@ -17,6 +17,17 @@ async function create(req: Request, res: Response): Promise<Response> {
   });
 }
 
+async function listAllProducts(req: Request, res: Response): Promise<Response> {
+  const serviceResponse = await productService.listAllProducts();
+
+  if (serviceResponse.status !== 'SUCCESSFUL') {
+    return res.status(mapStatusHTTP(serviceResponse.status)).json(serviceResponse.data);  
+  }
+
+  return res.status(200).json(serviceResponse.data);
+}
+
 export default {
   create,
+  listAllProducts,
 };
