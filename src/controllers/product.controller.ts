@@ -23,7 +23,8 @@ async function listAllProducts(req: Request, res: Response): Promise<Response> {
   if (serviceResponse.status !== 'SUCCESSFUL') {
     return res.status(mapStatusHTTP(serviceResponse.status)).json(serviceResponse.data);  
   }
-
+  // console.log('teste====>', serviceResponse.data);
+  
   return res.status(200).json(serviceResponse.data);
 }
 
