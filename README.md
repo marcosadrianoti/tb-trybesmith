@@ -13,18 +13,11 @@ Projeto desenvolvido por mim durante o curso de Desenvolvimento Web na Trybe. Di
 <details>
 <summary><strong> Requisitos do projeto:</strong></summary>
 
-  * Criar endpoints para listar produtos.
-  * Desenvolver testes que cubram no mínimo 5% de linhas e tenha no mínimo 2 funções escritas nas camadas da sua aplicação.
-  * Criar endpoint para cadastrar produtos.
-  * Criar validações para produtos.
-  * Desenvolver testes que cubram no mínimo 10% de linhas e tenha no mínimo 3 funções escritas nas camadas da sua aplicação.
-  * Criar endpoint para validar e cadastrar vendas.
-  * Desenvolver testes que cubram no mínimo 15% de linhas e tenha no mínimo 4 funções escritas nas camadas da sua aplicação.
-  * Criar endpoints para listar vendas.
-  * Desenvolver testes que cubram no mínimo 20% de linhas e tenha no mínimo 6 funções escritas nas camadas da sua aplicação.
-  * Criar endpoint para atualizar um produto.
-  * Desenvolver testes que cubram no mínimo 25% de linhas e tenha no mínimo 7 funções escritas nas camadas da sua aplicação.
-  * Criar endpoint para deletar um produto.
+  * Criar um endpoint para o cadastro de produtos.
+  * Criar um endpoint para a listagem de produtos.
+  * Criar um endpoint para listar todos os pedidos.
+  * Criar um endpoint para o login de pessoas usuárias.
+  * Criar as validações para as produtos.
 </details>
   
 ## Rodando o projeto localmente
@@ -39,13 +32,13 @@ cd meu-diretorio
 Clone o projeto com o comando `git clone`:
 
 ```bash
-git clone git@github.com:marcosadrianoti/tb-store-manager.git
+git clone git@github.com:marcosadrianoti/tb-trybesmith.git
 ```
 
 Acesse o diretório do projeto com o comando `cd`:
 
 ```bash
-cd tb-store-manager
+cd tb-trybesmith
 ```
 
 Instale as dependências executando:
@@ -68,7 +61,6 @@ npm run start
 
 Para exercutar os teste:
 
-
 ```bash
-npm run test:mocha
+npm run test
 ```
